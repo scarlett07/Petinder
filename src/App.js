@@ -13,23 +13,28 @@ import Favorites from './pages/Favorites'
 class App extends Component {
   render() {
     return (
-      <div class="App">
+      <div className="App">
 
-          <Link to="/"></Link>
-          <Link to="/SignUp">sss</Link>
-          <Link to="/Home"></Link>
-          <Link to="/Profile"></Link>
-          <Link to="/Categories"></Link>
-          <Link to="/Favorites"></Link>
+        <nav className="navbar navbar-dark bg-warning">
+          <span className="navbar-brand right">Petinder</span>
+          <span className="text-white"><Link to="/">home</Link></span>
+          <Link to="/SignUp">sign up</Link>
+          <Link to="/Login">Login</Link>
+          <Link to="/Profile">profile</Link>
+          <Link to="/Categories">categories</Link>
+          <Link to="/Favorites">favorites</Link>
+        </nav>
 
-          <Switch>
-            <Route path="/" exact component={Login} />
-            <Route path="/SignUp" component={SignUp} />
-            <Route path="/Home" component={Home} />
-            <Route path="/Profile" component={Profile} />
-            <Route path="/Categories" component={Categories} />
-            <Route path="/Favorites" component={Favorites} />
-          </Switch>
+
+
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/SignUp" component={SignUp} />
+          <Route path="/Login" component={Login} />
+          <Route path="/Profile" component={Profile} />
+          <Route path="/Categories" component={Categories} />
+          <Route path="/Favorites" component={Favorites} />
+        </Switch>
 
       </div>
 

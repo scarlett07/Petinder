@@ -1,3 +1,16 @@
+.blue{
+  background-color: blue;
+}
+
+.pink{
+  background-color: pink;
+}
+
+.yellow{
+  background-color: rgba(255, 255, 0, 0.212);
+}
+
+
 .App {
   text-align: center;
 }
