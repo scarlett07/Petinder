@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Home extends Component {
+class Favorites extends Component {
   render() {
     return (
       <div className="App">
-         Home
+         Favorites
       </div>
     );
   }
 }
 
-export default Home;
+export default Favorites;
